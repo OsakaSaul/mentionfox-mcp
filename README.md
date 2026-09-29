@@ -114,7 +114,7 @@ These are the tools the server returns from `tools/list`:
 
 ## Links
 
-- Developer docs: https://mentionfox.com/help/developers/mcp
+- Developer docs: https://mentionfox.com/help/developers/mcp-server
 - Pricing: https://mentionfox.com/pricing
 
 ## License
