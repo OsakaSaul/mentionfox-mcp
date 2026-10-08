@@ -1,6 +1,6 @@
 # MentionFox MCP
 
-Cited reports on any company or person, credential checks and mention scans for your AI.
+Research on people and companies inside your AI assistant, with every claim cited: one-page briefs, full reports, credential checks, contact details and mention scans. A free MentionFox account works; plans are at [mentionfox.com/pricing](https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing).
 
 ![MentionFox](https://mentionfox.com/launch/lp-1280x800.png)
 
@@ -104,9 +104,9 @@ These are the tools the server returns from `tools/list`:
 | --- | --- |
 | `source_check` | Checks the credentials someone claims (doctor, lawyer, broker, professor, company director) against the official lists that would record them, and answers verified, partly verified, could not verify, or contradicted by the record, with a link for each claim. |
 | `enrich_person` | Finds how to reach a person you can already name: their email address, phone number where there is one, current role and profile links. |
-| `get_snapshot` | Writes a one-page brief on a person, firm or publication from the public record, returned as text plus a shareable link. |
+| `get_snapshot` | Writes a one-page brief on a person, firm or publication, every claim cited, returned as text plus a shareable link. |
 | `get_full_report` | Writes a long, section-by-section report on one subject, ending with its sources, fixed as of the day it was made. |
-| `get_dossier` | Pulls together everything on file about one person: what they have done, who they work with, how they are spoken about, what they have said in public and recent news. |
+| `get_dossier` | Pulls together everything on file about one person: what they have done, who they work with, how they are spoken about, what they have said and recent news. |
 | `compare_people` | Sets two to five people you have already looked up side by side in a table, framed by what the comparison is for. |
 | `scan_for_mentions` | Finds posts, comments, articles and videos from the last day that mention a brand, product, topic or person, with a link, sentiment and a flag for anyone who sounds ready to buy. |
 | `export_report` | Turns something you already have into a file to send: a web page, a print-ready page you can save as PDF, or plain text, with your own name, logo and colours. |
@@ -114,8 +114,8 @@ These are the tools the server returns from `tools/list`:
 
 ## Links
 
-- Developer docs: https://mentionfox.com/help/developers/mcp-server
-- Pricing: https://mentionfox.com/pricing
+- Developer docs: https://mentionfox.com/help/developers/mcp-server?utm_source=github_readme&utm_medium=mcp_listing
+- Pricing: https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing
 
 ## License
 
