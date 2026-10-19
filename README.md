@@ -1,6 +1,6 @@
 # MentionFox MCP
 
-Research on people and companies inside your AI assistant, with every claim cited: one-page briefs, full reports, credential checks, contact details and mention scans. New: find buyers now. Paste a website and get companies with a filed reason to buy this month (funding, new executives, IPO filings, layoffs), each with its record link. A free MentionFox account works; plans are at [mentionfox.com/pricing](https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing).
+Research on people and companies inside your AI assistant, with every claim cited: one-page briefs, full reports, credential checks, contact details and mention scans. New: find buyers now. Paste a website and get companies with a filed reason to buy this month (funding, new executives, IPO filings, layoffs), each with its record link. A free MentionFox account works; plans are at [mentionfox.com/pricing](https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing). Set-up for Claude, Cursor and n8n, with real example results: [mentionfox.com/for-agents](https://mentionfox.com/for-agents?utm_source=github_readme&utm_medium=mcp_listing).
 
 ![MentionFox](https://mentionfox.com/launch/lp-1280x800.png)
 
@@ -96,6 +96,13 @@ Cursor will ask you to sign in to MentionFox the first time a tool is used. To u
 }
 ```
 
+### n8n
+
+1. In your workflow, open the **AI Agent** node and add the **MCP Client Tool**.
+2. Set **Endpoint** to `https://mentionfox.com/mcp` and **Server Transport** to **HTTP Streamable**.
+3. Set **Authentication** to **Bearer Auth** and create a credential with your MentionFox personal access key as the token.
+4. Leave **Tools to Include** on **All**, or pick the ones the workflow needs.
+
 ## Tools
 
 These are the tools the server returns from `tools/list`:
@@ -111,9 +118,15 @@ These are the tools the server returns from `tools/list`:
 | `scan_for_mentions` | Finds posts, comments, articles and videos from the last day that mention a brand, product, topic or person, with a link, sentiment and a flag for anyone who sounds ready to buy. |
 | `export_report` | Turns something you already have into a file to send: a web page, a print-ready page you can save as PDF, or plain text, with your own name, logo and colours. |
 | `get_my_recent_research` | Lists the people and reports you have already researched here, so you can check before looking someone up again. |
-| `find_buyers_now` | Give the website of the business you sell for and get up to 10 US companies with a filed reason to buy from you now: new funding filings, a new chief executive or other senior hire, IPO filings, activist stakes, layoff filings and notices, crowdfunding raises and new Y Combinator companies. Each one comes with the record it came from, a why-now line written from that record and a note on why it fits what you sell. Costs 1 credit when companies come back, nothing when none do. Try it free at [mentionfox.com/buyers](https://mentionfox.com/buyers?utm_source=github_readme&utm_medium=mcp_listing). |
+| `find_buyers_now` | Give the website of the business you sell for and get up to 10 US companies with a filed reason to buy from you now: new funding filings, a new chief executive or other senior hire, IPO filings, activist stakes, layoff filings and notices, crowdfunding raises and companies in a new accelerator batch. Each one comes with the record it came from, a why-now line written from that record and a note on why it fits what you sell. Nothing is charged when none come back. Try it free at [mentionfox.com/buyers](https://mentionfox.com/buyers?utm_source=github_readme&utm_medium=mcp_listing). |
+
+## What it costs
+
+Tools spend credits from your MentionFox plan. Each tool's description tells your AI what it costs before it runs, so it can check with you first; nothing is charged when there is no match, when a name matches more than one subject, or when you already have the result. Plans and credits: https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing
 
 ## Links
+
+- For AI agents (set-up and real example results): https://mentionfox.com/for-agents?utm_source=github_readme&utm_medium=mcp_listing
 
 - Developer docs: https://mentionfox.com/help/developers/mcp-server?utm_source=github_readme&utm_medium=mcp_listing
 - Pricing: https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing
