@@ -1,5 +1,7 @@
 # MentionFox MCP
 
+[![MentionFox MCP connector](https://glama.ai/mcp/connectors/io.github.OsakaSaul/mentionfox/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.OsakaSaul/mentionfox)
+
 Research on people and companies inside your AI assistant, with every claim cited: one-page briefs, full reports, credential checks, contact details and mention scans. New: find buyers now. Paste a website and get companies with a filed reason to buy this month (funding, new executives, IPO filings, layoffs), each with its record link. A free MentionFox account works; plans are at [mentionfox.com/pricing](https://mentionfox.com/pricing?utm_source=github_readme&utm_medium=mcp_listing). Set-up for Claude, Cursor and n8n, with real example results: [mentionfox.com/for-agents](https://mentionfox.com/for-agents?utm_source=github_readme&utm_medium=mcp_listing).
 
 ![MentionFox](https://mentionfox.com/launch/lp-1280x800.png)
